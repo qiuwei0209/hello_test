@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
-
+int g_flag = 1;
 
 int test_out(void)
 {
