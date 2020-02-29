@@ -12,4 +12,4 @@ jobs:
     - name: make
       run: make
     - name: run test
-      run: hello_test
+      run: ./hello_test
