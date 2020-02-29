@@ -4,5 +4,6 @@
 int test(void)
 {
     printf("test this repository");
+    return 0;
 }
 
