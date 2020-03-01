@@ -16,7 +16,7 @@ CFLAGS = -g -Wall -O2
 CFLAGS += -Werror -Wno-unused-variable -Wno-unused-but-set-variable -Wno-unused-label -Wno-unused-function -Wno-uninitialized
 CFLAGS += -I./
 
-LDFLAGS := 
+LDFLAGS :=
 
 
 .PHONY: all clean
@@ -24,7 +24,7 @@ LDFLAGS :=
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
-	$(CPP) $(OBJECTS) $(LDFLAGS) -o $@
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
 
 %.o: %.c $(HEADS)
 	$(CC) $(CFLAGS) -c $< -o $@
